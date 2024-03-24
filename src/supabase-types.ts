@@ -124,7 +124,7 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "Celebrite"
             referencedColumns: ["id"]
-          },
+            },
           {
             foreignKeyName: "public_celebrite_film_film_fkey"
             columns: ["film"]
@@ -346,21 +346,36 @@ export type Database = {
       Projet: {
         Row: {
           description_projet: string | null
+          description2_projet: string | null
           id: number
+          lien_projet: string | null
           nom_projet: string | null
           photo_projet: string | null
+          technologie1_projet: string | null
+          technologie2_projet: string | null
+          technologie3_projet: string | null
         }
         Insert: {
           description_projet?: string | null
+          description2_projet?: string | null
           id?: number
+          lien_projet?: string | null
           nom_projet?: string | null
           photo_projet?: string | null
+          technologie1_projet?: string | null
+          technologie2_projet?: string | null
+          technologie3_projet?: string | null
         }
         Update: {
           description_projet?: string | null
+          description2_projet?: string | null
           id?: number
+          lien_projet?: string | null
           nom_projet?: string | null
           photo_projet?: string | null
+          technologie1_projet?: string | null
+          technologie2_projet?: string | null
+          technologie3_projet?: string | null
         }
         Relationships: []
       }

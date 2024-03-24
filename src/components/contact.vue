@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-custom-blue" id="contact">
+  <div class="bg-custom-blue" >
     <div class="max-w-4xl mx-auto px-4">
       
       <div class="flex flex-wrap">
         <!-- Colonne de texte -->
         <div class="w-full lg:w-2/3 px-4 mb-8 lg:mb-0">
-          <h2 class="text-3xl font-bold mb-6 text-bleuneon relative">
+          <h2 class="text-3xl font-bold mb-6 text-bleuneon relative" id="contact">
             04. Contactez-moi
             <!-- Barre sous le titre -->
             <span class="block h-1 w-16 bg-bleuneon mt-2"></span>

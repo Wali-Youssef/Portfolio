@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 import type { Database, Tables } from '@/supabase-types';
-defineProps <Database["public"]["Tables"]["Projet"]["Row"] & {Celebrite:Tables<'Celebrite'>[]} & {Genre:Tables<'Genre'>[]} & {Saga:Tables<'Saga'>[]} & {Variante:Tables<'Variante'>} & {Support:Tables<'Support'>} & {Plateforme:Tables<'Plateforme'>}>()
+defineProps <Database["public"]["Tables"]["Projet"]["Row"] >()
 </script>
 
 <template>
 
 
-<div class="flex min-h-screen items-center justify-center  bg-custom-blue">
+<div class="flex min-h-screen items-center justify-center  bg-custom-blue" id="mes-projets">
 
 <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
   <div class="h-96 w-72">

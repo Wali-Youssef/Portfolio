@@ -156,7 +156,7 @@
         
     </section>
 
-    <div class="#projects-section bg-custom-blue" id="mes-projets">
+    <div class="#projects-section bg-custom-blue" >
     <div class="max-w-4xl mx-auto px-4">
       <br>
       <br>
