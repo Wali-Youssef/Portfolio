@@ -343,6 +343,27 @@ export type Database = {
         }
         Relationships: []
       }
+      Projet: {
+        Row: {
+          description_projet: string | null
+          id: number
+          nom_projet: string | null
+          photo_projet: string | null
+        }
+        Insert: {
+          description_projet?: string | null
+          id?: number
+          nom_projet?: string | null
+          photo_projet?: string | null
+        }
+        Update: {
+          description_projet?: string | null
+          id?: number
+          nom_projet?: string | null
+          photo_projet?: string | null
+        }
+        Relationships: []
+      }
       Quartier: {
         Row: {
           fk_commune: number | null
