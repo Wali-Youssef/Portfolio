@@ -3,7 +3,7 @@ import { useRoute } from 'vue-router/auto';
 import { supabase } from '@/supabase';
 
 import projet from '@/components/projet.vue';
-const route = useRoute('/films/[id]');
+const route = useRoute('/projet/[id]');
 let {data : projet, error} = await supabase
     .from('Projet')
     .select(`
