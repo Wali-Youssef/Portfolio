@@ -70,6 +70,8 @@ export default defineComponent({
 </script>
 
 <style>
+
+
 .fade-in-up {
   animation: fadeInUp 0.5s ease forwards;
 }

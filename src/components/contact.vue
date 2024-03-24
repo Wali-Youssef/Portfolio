@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-custom-blue">
+  <div class="bg-custom-blue" id="contact">
     <div class="max-w-4xl mx-auto px-4">
       
       <div class="flex flex-wrap">

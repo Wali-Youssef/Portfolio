@@ -1,6 +1,6 @@
 <template>
 
-<section class="bg-custom-blue py-0">
+<section class="bg-custom-blue py-0" id="mes-competence">
     <div class="max-w-4xl mx-auto px-4">
         <br>
         <br>
@@ -156,7 +156,7 @@
         
     </section>
 
-    <div class="#projects-section bg-custom-blue">
+    <div class="#projects-section bg-custom-blue" id="mes-projets">
     <div class="max-w-4xl mx-auto px-4">
       <br>
       <br>

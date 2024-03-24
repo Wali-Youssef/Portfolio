@@ -6,7 +6,7 @@
 
         <nav class="container relative flex items-center justify-between px-6 py-8 text-white ">
             <a href="/">
-                <img src="../assets/logo1.svg" alt="Logo" class="w-12 h-12" />
+                <img src="../assets/YW1.svg" alt="Logo" class="w-12 h-12" />
             </a>
 
             <button @click="open = !open" class="md:hidden">
@@ -33,17 +33,17 @@
                         class="text-[color-code-for-text] font-fira-code"> Qui je
                         suis ?</span>
                 </a>
-                <a href="#" class="block transition-colors duration-300 md:px-6 hover:text-bleuneon">
+                <a href="#mes-competence" @click="scrollToSection($event, '#mes-competence')" class="block transition-colors duration-300 md:px-6 hover:text-bleuneon">
                     <span class="text-bleuneon font-fira-code ">&nbsp02.</span> <span
                         class="text-[color-code-for-text] font-fira-code"> Mes
                         compétences</span>
                 </a>
-                <a href="#" class="block transition-colors duration-300 md:px-6 hover:text-bleuneon">
+                <a href="#mes-projets" @click="scrollToSection($event, '#mes-projets')" class="block transition-colors duration-300 md:px-6 hover:text-bleuneon">
                     <span class="text-bleuneon font-fira-code">&nbsp03.</span> <span
                         class="text-[color-code-for-text] font-fira-code"> Mes
                         projets</span>
                 </a>
-                <a href="#" class="block transition-colors duration-300 md:px-6 hover:text-bleuneon">
+                <a href="#contact"  @click="scrollToSection($event, '#contact')" class="block transition-colors duration-300 md:px-6 hover:text-bleuneon">
                     <span class="text-bleuneon font-fira-code">&nbsp04.</span> <span
                         class="text-[color-code-for-text] font-fira-code"> Contact</span>
                 </a>
