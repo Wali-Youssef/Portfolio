@@ -29,7 +29,7 @@
           <div class="w-full lg:w-1/2 px-4 lg:mt-14 relative">
             <!-- Ajoutez 'lg:mt-10' pour descendre l'image en mode desktop -->
             <div class="w-full h-auto overflow-hidden rounded-lg shadow-lg">
-              <img src="#" alt="À propos de moi" class="w-full h-full object-cover" />
+              <img src="../assets/imgyou.jpg" alt="À propos de moi" class="w-full h-full object-cover" />
               <!-- Overlay pour le filtre -->
               <div class="absolute inset-0 bg-black opacity-25"></div>
               <!-- Barres -->
