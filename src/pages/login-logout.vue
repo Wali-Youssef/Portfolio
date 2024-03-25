@@ -31,7 +31,7 @@
   const signInWithGithub = async () => {
     try {
       await supabase.auth.signInWithOAuth({ provider: 'github' });
-      router.push('/projet/edit');
+      router.push('/projet/edit/[[id]]');
     } catch (error) {
       console.error('Erreur lors de la connexion avec Github:', error.message);
       // Gérer les erreurs de connexion ici
