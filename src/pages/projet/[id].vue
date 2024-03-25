@@ -30,5 +30,7 @@ console.log("Réponse de Supabase :", projet);
 <template>
     <div>
         <projetid v-bind="projet" />
+        
     </div>
+    <div class="custom-cursor"></div>
 </template>

@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-cursor {
+    position: fixed;
+    width: 30px; /* Ajustez la taille du curseur selon vos préférences */
+    height: 30px;
+    border: 2px solid #fff; /* Couleur du curseur */
+    border-radius: 50%; /* Forme du curseur */
+    pointer-events: none; /* Le curseur ne doit pas bloquer les clics */
+    z-index: 9999; /* Assurez-vous que le curseur est au-dessus de tout le reste */
+    transition: transform 0.3s ease; /* Animation de transition */
+    background-color: rgba(255, 255, 255, 0.2); /* Couleur du curseur */
+    mix-blend-mode: overlay; /* Mélange de couleur */
+  }
+  
+  .custom-cursor:hover {
+    transform: scale(1.2); /* Ajustez l'échelle du curseur lorsqu'il est survolé */
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur du curseur lorsqu'il est survolé */
+  }
+  body {
+    cursor: none;
+  }
+  * {
+    cursor: none !important;
+  }

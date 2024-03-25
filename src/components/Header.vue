@@ -47,6 +47,10 @@
                     <span class="text-bleuneon font-fira-code">&nbsp04.</span> <span
                         class="text-[color-code-for-text] font-fira-code"> Contact</span>
                 </a>
+                <router-link to="/login-logout" class="block transition-colors duration-300 md:px-6 hover:text-bleuneon opacity-50">
+                    <span class="text-bleuneon font-fira-code">.</span> <span
+                        class="text-[color-code-for-text] font-fira-code"> Admin</span>
+                </router-link>
             </div>
 
 
