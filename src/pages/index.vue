@@ -62,12 +62,22 @@ export default defineComponent({
             });
         }
 
+        // Ajouter la logique pour suivre le curseur de la souris
+        function updateCursorPosition(event: MouseEvent) {
+            const cursor = document.querySelector('.custom-cursor') as HTMLElement;
+            cursor.style.top = event.clientY + 'px';
+            cursor.style.left = event.clientX + 'px';
+        }
+
+        // Ajouter un écouteur d'événement pour suivre le mouvement de la souris
+        window.addEventListener('mousemove', updateCursorPosition);
+
         return { tableauprojet };
     },
     components: { competence, moi, intro, projet, contact, projetcard }
 });
-
 </script>
+
 
 <style>
 
@@ -93,24 +103,48 @@ export default defineComponent({
   opacity: 0;
 }
 
+.custom-cursor {
+  position: fixed;
+  width: 30px; /* Ajustez la taille du curseur selon vos préférences */
+  height: 30px;
+  border: 2px solid #fff; /* Couleur du curseur */
+  border-radius: 50%; /* Forme du curseur */
+  pointer-events: none; /* Le curseur ne doit pas bloquer les clics */
+  z-index: 9999; /* Assurez-vous que le curseur est au-dessus de tout le reste */
+  transition: transform 0.3s ease; /* Animation de transition */
+  background-color: rgba(255, 255, 255, 0.2); /* Couleur du curseur */
+  mix-blend-mode: overlay; /* Mélange de couleur */
+}
 
+.custom-cursor:hover {
+  transform: scale(1.2); /* Ajustez l'échelle du curseur lorsqu'il est survolé */
+  background-color: rgba(255, 255, 255, 0.5); /* Couleur du curseur lorsqu'il est survolé */
+}
+body {
+  cursor: none;
+}
+* {
+  cursor: none !important;
+}
 </style>
 
 <template>
-  <main class="font-fira-code text-white relative">
-    <intro /> 
-    <moi />
-    <competence />
-
-<div class="bg-custom-blue">
-    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto px-4  bg-custom-blue " >
-        <!-- Utilisez projetcard à la place de AfficheFilm -->
-        <projetcard v-for="projet in tableauprojet" v-bind="projet" :key="projet.id" />
-    </div>
-
-  </div>
-    <contact />
-
-    
-  </main>
-</template>
+    <main class="font-fira-code text-white relative">
+      
+      <intro /> 
+      <moi />
+      <competence />
+  
+      <div class="bg-custom-blue">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto px-4  bg-custom-blue " >
+            <!-- Utilisez projetcard à la place de AfficheFilm -->
+            <projetcard v-for="projet in tableauprojet" v-bind="projet" :key="projet.id" />
+        </div>
+      </div>
+  
+      <contact />
+  
+      <!-- Ajoutez le curseur personnalisé -->
+      <div class="custom-cursor"></div>
+    </main>
+  </template>
