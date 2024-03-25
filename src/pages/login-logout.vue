@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { supabase, user } from '../supabase';
+console.log("user :",user);
+
 </script>
 <template>
 <div>
