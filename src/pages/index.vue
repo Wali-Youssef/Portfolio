@@ -6,7 +6,9 @@ import competence from '@/components/competence.vue';
 import projet from '@/components/projet.vue';
 import contact from '@/components/contact.vue';
 import projetcard from '@/components/projetcard.vue';
-import { supabase } from '@/supabase';
+import login from '@/components/login.vue';
+import { supabase  } from '@/supabase';
+
 
 export default defineComponent({
     name: 'TypeEffectComponent',
@@ -74,7 +76,7 @@ export default defineComponent({
 
         return { tableauprojet };
     },
-    components: { competence, moi, intro, projet, contact, projetcard }
+    components: { competence, moi, intro, projet, contact, projetcard, login }
 });
 </script>
 
@@ -143,7 +145,10 @@ body {
       </div>
   
       <contact />
+
+        <login />
   
+      
       <!-- Ajoutez le curseur personnalisé -->
       <div class="custom-cursor"></div>
     </main>
