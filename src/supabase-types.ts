@@ -351,9 +351,13 @@ export type Database = {
           lien_projet: string | null
           nom_projet: string | null
           photo_projet: string | null
+          img1_projet: string | null
+          img2_projet: string | null
+          img3_projet: string | null
           technologie1_projet: string | null
           technologie2_projet: string | null
           technologie3_projet: string | null
+          conception_projet: string | null
         }
         Insert: {
           description_projet?: string | null

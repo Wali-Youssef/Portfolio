@@ -24,3 +24,5 @@ defineProps <Database["public"]["Tables"]["Projet"]["Row"] >()
 </div>
 
 </template>
+
+
