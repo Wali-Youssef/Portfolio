@@ -23,6 +23,7 @@ if (route.params.id) {
 </script>
 
 <template>
+    
     <div>
         <div class="p-2">
             <h2 class="text-2xl">
@@ -44,7 +45,9 @@ if (route.params.id) {
                 <FormKit name="photo_projet" label="Photo du projet" />
                 
             </FormKit>
+            <div class="custom-cursor"></div>
         </div>
+        
     </div>
-    <div class="custom-cursor"></div>
+    
 </template>
