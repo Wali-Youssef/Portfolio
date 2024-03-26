@@ -46,4 +46,5 @@ if (route.params.id) {
             </FormKit>
         </div>
     </div>
+    <div class="custom-cursor"></div>
 </template>

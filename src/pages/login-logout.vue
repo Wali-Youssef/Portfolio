@@ -22,3 +22,4 @@ import { supabase, user } from '../supabase';
   </div>
   <div class="custom-cursor"></div>
 </template>
+
