@@ -234,7 +234,7 @@
 }
 
 .scroll div span:hover {
-    background: #3fd2f9;
+    background: #4BE6C8;
     cursor: pointer;
 }
 

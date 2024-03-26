@@ -39,10 +39,12 @@ if (route.params.id) {
                     outer: 'py-2',
                     },
                 }">
-                <FormKit name="nom_projet" label="Titre du film" />
-                <FormKit name="description_projet" label="Description du film" />
+                <FormKit name="nom_projet" label="Titre du projet" />
+                <FormKit name="description_projet" label="Description du projet" />
+                <FormKit name="photo_projet" label="Photo du projet" />
                 
             </FormKit>
         </div>
     </div>
+    <div class="custom-cursor"></div>
 </template>
