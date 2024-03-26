@@ -13,4 +13,5 @@ import Footer from './components/Footer.vue'
     <RouterView />
   </Suspense>
   <Footer />
+      
 </template>

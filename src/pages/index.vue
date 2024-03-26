@@ -10,6 +10,7 @@
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto px-4  bg-custom-blue " >
             <!-- Utilisez projetcard à la place de AfficheFilm -->
             <projetcard v-for="projet in tableauprojet" v-bind="projet" :key="projet.id" />
+            
         </div>
       </div>
   

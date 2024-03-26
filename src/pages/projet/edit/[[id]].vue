@@ -23,7 +23,6 @@ if (route.params.id) {
 </script>
 
 <template>
-    
     <div>
         <div class="p-2">
             <h2 class="text-2xl">
@@ -40,14 +39,13 @@ if (route.params.id) {
                     outer: 'py-2',
                     },
                 }">
-                <FormKit name="nom_projet" label="Titre du projet" />
+                <FormKit name="nom_projet" label="Titre du projet" autofocus />
                 <FormKit name="description_projet" label="Description du projet" />
                 <FormKit name="photo_projet" label="Photo du projet" />
                 
             </FormKit>
-            <div class="custom-cursor"></div>
+           
         </div>
         
     </div>
-    
 </template>
