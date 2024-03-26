@@ -1,3 +1,30 @@
+
+<template>
+    <main class="font-fira-code text-white relative">
+      
+      <intro /> 
+      <moi />
+      <competence />
+  
+      <div class="bg-custom-blue">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto px-4  bg-custom-blue " >
+            <!-- Utilisez projetcard à la place de AfficheFilm -->
+            <projetcard v-for="projet in tableauprojet" v-bind="projet" :key="projet.id" />
+        </div>
+      </div>
+  
+      <contact />
+
+        
+  
+      
+      <!-- Ajoutez le curseur personnalisé -->
+      <div class="custom-cursor"></div>
+    </main>
+  </template>
+
+
+
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
 import intro from '@/components/intro.vue';
@@ -107,27 +134,3 @@ export default defineComponent({
 
 
 </style>
-
-<template>
-    <main class="font-fira-code text-white relative">
-      
-      <intro /> 
-      <moi />
-      <competence />
-  
-      <div class="bg-custom-blue">
-        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto px-4  bg-custom-blue " >
-            <!-- Utilisez projetcard à la place de AfficheFilm -->
-            <projetcard v-for="projet in tableauprojet" v-bind="projet" :key="projet.id" />
-        </div>
-      </div>
-  
-      <contact />
-
-        
-  
-      
-      <!-- Ajoutez le curseur personnalisé -->
-      <div class="custom-cursor"></div>
-    </main>
-  </template>

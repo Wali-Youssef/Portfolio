@@ -1,9 +1,4 @@
-
-
-  <template>
- 
-
-
+<template>
  <section class="py-0 bg-custom-blue" id="qui-je-suis">
       <div class="max-w-4xl mx-auto px-4">
         <div class="flex flex-wrap -mx-4">

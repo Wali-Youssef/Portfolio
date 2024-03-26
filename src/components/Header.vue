@@ -3,7 +3,6 @@
 
     <header class="bg-custom-blue sticky top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
 
-
         <nav class="container relative flex items-center justify-between px-6 py-8 text-white ">
             <a href="/">
                 <img src="../assets/YW1.svg" alt="Logo" class="w-12 h-12" />
